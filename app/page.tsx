@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center p-24 bg-black">
+        <main className="flex min-h-screen flex-col items-center p-4  bg-black">
             <div className={"max-w-md w-full bg-gray-100 rounded-card flex flex-col items-center p-8"}>
                 <h5 className={"max-w-sm w-full yandex-button"}>
                     Обо мне
