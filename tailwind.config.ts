@@ -10,9 +10,11 @@ const config: Config = {
         extend: {
             borderRadius: {
                 'card': '48px',
+
             },
             colors: {
                 'yandex': '#FCE000',
+                'dodo-surface': '#1A1A1A',
             },
         },
     },
