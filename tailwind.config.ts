@@ -15,6 +15,7 @@ const config: Config = {
             colors: {
                 'yandex': '#FCE000',
                 'dodo-surface': '#1A1A1A',
+                'sw': '#1F93EFFF'
             },
         },
     },

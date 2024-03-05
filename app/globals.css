@@ -1,6 +1,8 @@
 @import "../public/yandex-sans-text-bold/style.css";
 @import "../public/yandex-sans-text-regular/style.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +12,10 @@
     .text-balance {
         text-wrap: balance;
     }
+}
+
+body {
+    @apply bg-black text-white;
 }
 
 @layer components {
@@ -34,6 +40,14 @@
         font-family: 'Yandex Sans';
         font-weight: 400;
         font-size: 20px;
+        line-height: 20px;
+    }
+
+    .sw-font {
+        @apply block font-normal m-0;
+        font-family: 'Nunito';
+        font-weight: 400;
+        font-size: 16px;
         line-height: 20px;
     }
 }
