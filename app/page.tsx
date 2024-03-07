@@ -113,7 +113,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16"}>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16 max-w-7xl"}>
                         <div className={"border-2 border-neutral-600 p-8 rounded-2xl w-full flex-col"}>
                             <p className={"bg-gradient-to-r from-sw to-cyan-500 inline-block text-transparent bg-clip-text text-4xl sw-font  border-neutral-600 rounded-2xl"}>
                                 Образовательная платформа c ИИ
