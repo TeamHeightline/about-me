@@ -1,6 +1,11 @@
 import Image from "next/image";
+import {Metadata} from "next";
 
 const RESUME_URL = "https://hh.ru/resume/db5e98bbff08e1a2f70039ed1f763373476e37"
+
+export const metadata: Metadata = {
+    title: 'Чирцов Т.А. - Резюме',
+}
 export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center md:p-16 p-4 bg-black">
