@@ -49,7 +49,7 @@ export default function Home() {
             <section>
                 <Image
                     className="rounded-card mt-16"
-                    src="/me-photo.jpg"
+                    src="/about-me/me-photo.jpg"
                     alt="Описание изображения"
                     width={300}
                     height={300}
