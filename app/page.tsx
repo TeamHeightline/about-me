@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+const RESUME_URL = "https://hh.ru/resume/db5e98bbff08e1a2f70039ed1f763373476e37"
 export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center md:p-16 p-4 bg-black">
@@ -88,7 +89,7 @@ export default function Home() {
                     <div
                         className={"bg-dodo-surface rounded-card w-[150px] h-[150px] flex items-center justify-center p-8"}>
                         <p className={"yandex-h2 text-3xl text-blue-600  "}>
-                            > 1.5 лет
+                            > 1.7 года
                         </p>
                     </div>
                     <div
@@ -150,11 +151,25 @@ export default function Home() {
                             </p>
                         </div>
                     </div>
-
                 </section>
-
             </div>
 
+
+            <div className="mt-32 mb-16">
+                <section className="p-6 max-w-max md:max-w-md border border-gray-300 shadow-lg bg-white">
+                    <h2 className="text-4xl font-semibold mb-2 text-hh2">Теперь и вы можете меня
+                        нанять
+                    </h2>
+                    <p className="mb-4 text-black">
+                        Если вы ищете опытного разработчика, готового взяться за ваш следующий
+                        проект, я открыт для предложений.
+                    </p>
+                    <a href={RESUME_URL}
+                       className="font-bold py-2 px-4 rounded hover:bg-green-400 inline-block text-center bg-hh">
+                        Перейти в HH
+                    </a>
+                </section>
+            </div>
 
         </main>
     );
