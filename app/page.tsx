@@ -88,13 +88,13 @@ export default function Home() {
                     </div>
                     <div
                         className={"bg-dodo-surface rounded-card w-[150px] h-[150px] flex items-center justify-center p-8"}>
-                        <p className={"yandex-h2 text-3xl text-blue-600  "}>
-                            > 1.7 года
+                        <p className={"yandex-h2 text-3xl text-blue-600"}>
+                            {"> 1.7 года"}
                         </p>
                     </div>
                     <div
                         className={"bg-dodo-surface rounded-card w-full md:w-[300px] h-[150px] flex items-center justify-center p-8"}>
-                        <p className={"yandex-h2 text-3xl   "}>
+                        <p className={"yandex-h2 text-3xl"}>
                             Делал проект с нуля
                         </p>
                     </div>
@@ -133,7 +133,7 @@ export default function Home() {
                             <p className={"text-xl  sw-font mt-4"}>
                                 Проект от части научный с экспериментальными подходами <br/>
                                 Участвовал в планировании с заказчиками, единственным программистом<br/>
-                                Писал весь проект с нуля > 1.7 года
+                                {"Писал весь проект с нуля > 1.7 года"}
 
                             </p>
                         </div>
