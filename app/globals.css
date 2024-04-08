@@ -50,4 +50,11 @@ body {
         font-size: 16px;
         line-height: 20px;
     }
+
+
+    .west-tech-list-gradient {
+        border: solid 1px transparent;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right, #6201fe, #950eba, #cd1c71, #ff2a32);
+    }
 }
