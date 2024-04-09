@@ -10,9 +10,8 @@ export default function Home() {
     return (
         <main className={"relative"}>
 
-            <section
-                className="sticky top-0  h-screen overflow-y-auto bg-black min-h-screen flex items-center justify-center">
-                <div className={"max-w-md md:max-w-4xl p-2 h-full"}>
+            <section className="sticky top-0 h-screen overflow-y-auto bg-black flex items-center justify-center">
+                <div className={"max-w-md md:max-w-4xl p-2 "}>
                     <div className={"grid grid-rows-2 grid-cols-4 gap-4 rounded-card"}>
                         <div
                             className="row-span-2 col-span-4 md:col-span-2 min-h-[350px] ">
