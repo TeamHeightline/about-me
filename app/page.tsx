@@ -10,7 +10,8 @@ export default function Home() {
     return (
         <main className={"relative"}>
 
-            <section className="sticky top-0  bg-black min-h-screen flex items-center justify-center">
+            <section
+                className="sticky top-0  h-screen overflow-y-auto bg-black min-h-screen flex items-center justify-center">
                 <div className={"max-w-md md:max-w-4xl p-2 h-full"}>
                     <div className={"grid grid-rows-2 grid-cols-4 gap-4 rounded-card"}>
                         <div
@@ -64,6 +65,55 @@ export default function Home() {
                     </a>
 
                 </div>
+            </section>
+
+            <section className={"sticky top-0 bg-black h-screen overflow-y-auto"}>
+
+                <div className={"max-w-6xl mx-auto"}>
+                    <div className="flex flex-col md:flex-row md:gap-4">
+                        <div
+                            className="rounded-card h-[316px] flex items-center justify-center p-8">
+                            <p className="yandex-h2 text-6xl hyphens-auto font-bold">
+                                2022 - настоящее время
+                            </p>
+                        </div>
+
+                        <div
+                            className="rounded-card flex flex-col md:items-center md:justify-center p-8">
+                            <p className="yandex-h2 text-4xl hyphens-auto font-bold">
+                                West engineering
+                            </p>
+                            <p className="yandex-h2 text-2xl mt-2">
+                                Системы мониторинга для <span className="text-rose-600"> АЭС </span>
+                            </p>
+                        </div>
+
+                        <div
+                            className=" rounded-card  w-[150px] h-[150px] flex items-center justify-center p-8">
+                            <p className="yandex-h2 text-3xl text-blue-600">
+                                {"> 1.7 года"}
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div
+                        className="flex flex-col md:items-center md:justify-center col-span-6 row-span-1 west-tech-list-gradient rounded-card whitespace-nowrap overflow-hidden">
+                        <div className="yandex-h2 text-xl p-4 flex flex-col md:flex-row gap-4">
+                            {["React js", "Typescript", "Redux Toolkit", "Tailwind", "MUI", "Chart js", "Next JS"].map((item, index) => (
+                                <div className={"flex flex-row gap-4"} key={index}>
+                                    <div className={index === 0 ? "md:hidden" : ""}>
+                                        ✦
+                                    </div>
+                                    <div key={index + " item"}>
+                                        {item.toUpperCase()}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <section className={"sticky top-0 min-h-screen bg-black h-full"}>
