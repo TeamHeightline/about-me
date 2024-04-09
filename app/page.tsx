@@ -100,11 +100,10 @@ export default function Home() {
                         className="flex flex-col md:items-center md:justify-center col-span-6 row-span-1 west-tech-list-gradient rounded-card whitespace-nowrap overflow-hidden">
                         <div className="yandex-h2 text-xl p-4 flex flex-col md:flex-row gap-4">
                             {["React js", "Typescript", "Redux Toolkit", "Tailwind", "MUI", "Chart js", "Next JS"].map((item, index) => (
-                                <div className={"flex flex-row gap-4"}>
-                                    {index !== 0 &&
-                                        <div key={index + " index"}>
-                                            ✦
-                                        </div>}
+                                <div className={"flex flex-row gap-4"} key={index}>
+                                    <div className={index === 0 ? "md:hidden" : ""}>
+                                        ✦
+                                    </div>
                                     <div key={index + " item"}>
                                         {item.toUpperCase()}
                                     </div>
