@@ -11,7 +11,7 @@ export default function Home() {
         <main className={"relative"}>
 
             <section className="sticky top-0  bg-black min-h-screen flex items-center justify-center">
-                <div className={"max-w-md md:max-w-4xl p-2"}>
+                <div className={"max-w-md md:max-w-4xl p-2 h-full"}>
                     <div className={"grid grid-rows-2 grid-cols-4 gap-4 rounded-card"}>
                         <div
                             className="row-span-2 col-span-4 md:col-span-2 min-h-[350px] ">
@@ -27,13 +27,14 @@ export default function Home() {
 
                         <div
                             className={"bg-gray-100 p-8 rounded-card row-span-1 md:col-span-2 col-span-4 flex items-center"}>
-                            <h1 className={"yandex-h2 text-6xl text-black"}>
+                            <h1 className={"yandex-h2 text-3xl md:text-6xl text-black"}>
                                 frontend <span className={"text-blue-700"}>dev.</span>
                             </h1>
                         </div>
 
 
-                        <div className={"bg-gray-100 p-8 rounded-card row-span-1 md:col-span-1 col-span-2"}>
+                        <div
+                            className={"bg-gray-100 p-8 rounded-card row-span-1 md:col-span-1 col-span-2 hidden md:block"}>
                             <h2 className={"yandex-h2  text-black"}>
                                 stack
                             </h2>
@@ -42,7 +43,8 @@ export default function Home() {
                                 <li className={"mt-1"}> MUI, Tailwind, styled components</li>
                             </ul>
                         </div>
-                        <div className={"bg-gray-100 p-8 rounded-card row-span-1 md:col-span-1 col-span-2"}>
+                        <div
+                            className={"bg-gray-100 p-8 rounded-card row-span-1 md:col-span-1 col-span-2 hidden md:block"}>
                             <h2 className={"yandex-h2 text-black"}>
                                 contacts
                             </h2>
@@ -64,20 +66,19 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className={"sticky top-0 h-screen bg-black"}>
+            <section className={"sticky top-0 min-h-screen bg-black h-full"}>
 
                 <div className={"max-w-6xl mx-auto"}>
-                    <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
-
+                    <div className="flex flex-col md:flex-row md:gap-4">
                         <div
-                            className="rounded-card col-span-2 md:col-span-3 w-full h-[316px] flex items-center justify-center p-8">
+                            className="rounded-card h-[316px] flex items-center justify-center p-8">
                             <p className="yandex-h2 text-6xl hyphens-auto font-bold">
                                 2022 - настоящее время
                             </p>
                         </div>
 
                         <div
-                            className="rounded-card col-span-2 md:col-span-2 row-span-1 w-full h-[316px] flex flex-col items-center justify-center p-8">
+                            className="rounded-card flex flex-col md:items-center md:justify-center p-8">
                             <p className="yandex-h2 text-4xl hyphens-auto font-bold">
                                 West engineering
                             </p>
@@ -87,37 +88,33 @@ export default function Home() {
                         </div>
 
                         <div
-                            className=" rounded-card  w-[150px] h-[150px] flex items-center justify-center p-8 col-span-1 row-span-1">
+                            className=" rounded-card  w-[150px] h-[150px] flex items-center justify-center p-8">
                             <p className="yandex-h2 text-3xl text-blue-600">
                                 {"> 1.7 года"}
                             </p>
                         </div>
+                    </div>
 
 
-                        <div
-                            className="flex flex-col items-center justify-center col-span-6 row-span-1 west-tech-list-gradient rounded-card">
-                            <div className="yandex-h2 text-xl p-4 flex gap-4">
-                                {["React js", "Typescript", "Redux Toolkit", "Tailwind", "MUI", "Chart js", "Next JS"].map((item, index) => (
-                                    <>
-                                        {index !== 0 &&
-                                            <div key={index + " index"}>
-                                                ✦
-                                            </div>}
-                                        <div key={index + " item"}>
-                                            {item.toUpperCase()}
-                                        </div>
-                                    </>
-                                ))}
-                            </div>
+                    <div
+                        className="flex flex-col md:items-center md:justify-center col-span-6 row-span-1 west-tech-list-gradient rounded-card whitespace-nowrap overflow-hidden">
+                        <div className="yandex-h2 text-xl p-4 flex flex-col md:flex-row gap-4">
+                            {["React js", "Typescript", "Redux Toolkit", "Tailwind", "MUI", "Chart js", "Next JS"].map((item, index) => (
+                                <div className={"flex flex-row gap-4"}>
+                                    {index !== 0 &&
+                                        <div key={index + " index"}>
+                                            ✦
+                                        </div>}
+                                    <div key={index + " item"}>
+                                        {item.toUpperCase()}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                    {/*<h2 className={"text-2xl mt-4"}>*/}
-                    {/*    Командная разработка*/}
-                    {/*</h2>*/}
                 </div>
 
             </section>
-
 
             {/*<div className="mt-16">*/}
             {/*    <section className={""}>*/}
