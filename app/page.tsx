@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 }
 export default function Home() {
     return (
-        <main className={"relative"}>
+        <main>
 
-            <section className="sticky top-0 h-screen overflow-y-auto bg-black flex items-center justify-center">
-                <div className={"max-w-md md:max-w-4xl p-2 "}>
+            <section className="h-screen bg-black flex items-center justify-center">
+                <div className={"max-w-md md:max-w-4xl p-2"}>
                     <div className={"grid grid-rows-2 grid-cols-4 gap-4 rounded-card"}>
                         <div
                             className="row-span-2 col-span-4 md:col-span-2 min-h-[350px] ">
@@ -66,173 +66,173 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className={"sticky top-0 bg-black h-screen overflow-y-auto"}>
+            <section className={"min-h-screen bg-black h-full px-2"}>
 
                 <div className={"max-w-6xl mx-auto"}>
-                    <div className="flex flex-col md:flex-row md:gap-4">
-                        <div
-                            className="rounded-card h-[316px] flex items-center justify-center p-8">
-                            <p className="yandex-h2 text-6xl hyphens-auto font-bold">
-                                2022 - настоящее время
-                            </p>
-                        </div>
-
-                        <div
-                            className="rounded-card flex flex-col md:items-center md:justify-center p-8">
-                            <p className="yandex-h2 text-4xl hyphens-auto font-bold">
-                                West engineering
-                            </p>
-                            <p className="yandex-h2 text-2xl mt-2">
-                                Системы мониторинга для <span className="text-rose-600"> АЭС </span>
-                            </p>
-                        </div>
-
-                        <div
-                            className=" rounded-card  w-[150px] h-[150px] flex items-center justify-center p-8">
-                            <p className="yandex-h2 text-3xl text-blue-600">
-                                {"> 1.7 года"}
-                            </p>
-                        </div>
+                    <div
+                        className="rounded-card  flex py-16">
+                        <p className="yandex-h2 text-6xl hyphens-auto font-bold">
+                            2022 - настоящее время
+                        </p>
                     </div>
 
+                    <div>
 
-                    <div
-                        className="flex flex-col md:items-center md:justify-center col-span-6 row-span-1 west-tech-list-gradient rounded-card whitespace-nowrap overflow-hidden">
-                        <div className="yandex-h2 text-xl p-4 flex flex-col md:flex-row gap-4">
-                            {["React js", "Typescript", "Redux Toolkit", "Tailwind", "MUI", "Chart js", "Next JS"].map((item, index) => (
-                                <div className={"flex flex-row gap-4"} key={index}>
-                                    <div className={index === 0 ? "md:hidden" : ""}>
-                                        ✦
+                        <div className="flex flex-col md:flex-row md:gap-8">
+                            <div
+                                className="rounded-card flex flex-col">
+                                <p className="yandex-h2 text-4xl hyphens-auto font-bold">
+                                    West engineering
+                                </p>
+                                <p className="yandex-h2 text-2xl mt-2">
+                                    Система мониторинга для <span className="text-rose-600"> АЭС </span>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p className="yandex-h2 text-3xl text-blue-600">
+                                    {"> 1.7 года"}
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div
+                            className="mt-8 flex flex-col md:items-center md:justify-center col-span-6 row-span-1 west-tech-list-gradient rounded-card whitespace-nowrap overflow-hidden">
+                            <div className="yandex-h2 text-xl p-4 flex flex-col md:flex-row gap-4">
+                                {["React js", "Typescript", "Redux Toolkit", "MUI", "Chart js", "Vite", "Express", "Prisma"].map((item, index) => (
+                                    <div className={"flex flex-row gap-4"} key={index}>
+                                        <div className={index === 0 ? "md:hidden" : ""}>
+                                            ✦
+                                        </div>
+                                        <div key={index + " item"}>
+                                            {item.toUpperCase()}
+                                        </div>
                                     </div>
-                                    <div key={index + " item"}>
-                                        {item.toUpperCase()}
-                                    </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className={"text-white"}>
+                            <div className={"mt-8 text-xl font-bold"}>
+                                Обязанности:
+                            </div>
+
+                            <ul className={"list-disc ml-5 marker:text-rose-500"}>
+                                <li>
+                                    Разработка ключевого функционала
+                                </li>
+                                <li>
+                                    Погружение в предметную область
+                                </li>
+                                <li>
+                                    Оптимизация кода для высоких нагрузок
+                                </li>
+                            </ul>
+
+                            <div className={"mt-8 text-xl font-bold"}>
+                                Помимо этого:
+                            </div>
+
+                            <ul className={"list-disc ml-5 marker:text-blue-400"}>
+                                <li>
+                                    Рефакторинг чужого кода
+                                </li>
+                                <li>
+                                    Менторство менее опытных коллег
+                                </li>
+                                <li>
+                                    Отстаивание интересов команды перед заказчиком
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
             </section>
 
-            <section className={"sticky top-0 min-h-screen bg-black h-full"}>
+            <section className={"min-h-screen bg-black h-full px-2"}>
 
                 <div className={"max-w-6xl mx-auto"}>
-                    <div className="flex flex-col md:flex-row md:gap-4">
-                        <div
-                            className="rounded-card h-[316px] flex items-center justify-center p-8">
-                            <p className="yandex-h2 text-6xl hyphens-auto font-bold">
-                                2022 - настоящее время
-                            </p>
-                        </div>
-
-                        <div
-                            className="rounded-card flex flex-col md:items-center md:justify-center p-8">
-                            <p className="yandex-h2 text-4xl hyphens-auto font-bold">
-                                West engineering
-                            </p>
-                            <p className="yandex-h2 text-2xl mt-2">
-                                Системы мониторинга для <span className="text-rose-600"> АЭС </span>
-                            </p>
-                        </div>
-
-                        <div
-                            className=" rounded-card  w-[150px] h-[150px] flex items-center justify-center p-8">
-                            <p className="yandex-h2 text-3xl text-blue-600">
-                                {"> 1.7 года"}
-                            </p>
-                        </div>
+                    <div
+                        className="rounded-card  flex py-16">
+                        <p className="yandex-h2 text-6xl hyphens-auto font-bold">
+                            февраль 2021 - август 2022
+                        </p>
                     </div>
 
+                    <div>
 
-                    <div
-                        className="flex flex-col md:items-center md:justify-center col-span-6 row-span-1 west-tech-list-gradient rounded-card whitespace-nowrap overflow-hidden">
-                        <div className="yandex-h2 text-xl p-4 flex flex-col md:flex-row gap-4">
-                            {["React js", "Typescript", "Redux Toolkit", "Tailwind", "MUI", "Chart js", "Next JS"].map((item, index) => (
-                                <div className={"flex flex-row gap-4"} key={index}>
-                                    <div className={index === 0 ? "md:hidden" : ""}>
-                                        ✦
+                        <div className="flex flex-col md:flex-row md:gap-8">
+                            <div
+                                className="rounded-card flex flex-col">
+                                <p className="yandex-h2 text-4xl hyphens-auto font-bold">
+                                    ETU LETI
+                                </p>
+                                <p className="yandex-h2 text-2xl mt-2 max-w-[30ch]">
+                                    Разработка образовательной платформы с <span className="text-rose-600"> ИИ </span>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p className="yandex-h2 text-3xl text-blue-600">
+                                    {"> 1.7 года"}
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div
+                            className="mt-8 flex flex-col md:items-center md:justify-center col-span-6 row-span-1 west-tech-list-gradient rounded-card whitespace-nowrap overflow-hidden">
+                            <div className="yandex-h2 text-xl p-4 flex flex-col md:flex-row gap-4">
+                                {["React js", "Typescript", "MobX", "MUI", "Next JS"].map((item, index) => (
+                                    <div className={"flex flex-row gap-4"} key={index}>
+                                        <div className={index === 0 ? "md:hidden" : ""}>
+                                            ✦
+                                        </div>
+                                        <div key={index + " item"}>
+                                            {item.toUpperCase()}
+                                        </div>
                                     </div>
-                                    <div key={index + " item"}>
-                                        {item.toUpperCase()}
-                                    </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className={"text-white"}>
+                            <div className={"mt-8 text-xl font-bold"}>
+                                Обязанности:
+                            </div>
+
+                            <ul className={"list-disc ml-5 marker:text-rose-500"}>
+                                <li>
+                                    Участвовал в разработке архитектуры проекта для фронтенда
+                                </li>
+                                <li>
+                                    Участие в проектировании схемы данных на бэкенде
+                                </li>
+                                <li>
+                                    Интегрировал рекомендательный ИИ
+                                </li>
+                            </ul>
+
+                            <div className={"mt-8 text-xl font-bold"}>
+                                Помимо этого:
+                            </div>
+
+                            <ul className={"list-disc ml-5 marker:text-blue-400"}>
+                                <li>
+                                    Разрабатывал решения для нестандартных требований заказчика
+                                </li>
+                                <li>
+                                    Сделал умный поиск
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
             </section>
 
-            {/*<div className="mt-16">*/}
-            {/*    <section className={""}>*/}
-            {/*        <div className={"flex items-center justify-center"}>*/}
-            {/*            <div>*/}
-            {/*                <h1 className={"text-6xl text-sw  sw-font text-center"}>*/}
-            {/*                    Study Ways*/}
-            {/*                </h1>*/}
-            {/*                <h3 className={"text-xl   sw-font"}>*/}
-            {/*                    ETU LETI*/}
-            {/*                </h3>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-
-            {/*        <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16 max-w-7xl"}>*/}
-            {/*            <div className={"border-2 border-neutral-600 p-8 rounded-2xl w-full flex-col"}>*/}
-            {/*                <p className={"bg-gradient-to-r from-sw to-cyan-500 inline-block text-transparent bg-clip-text text-4xl sw-font  border-neutral-600 rounded-2xl"}>*/}
-            {/*                    Образовательная платформа c ИИ*/}
-            {/*                </p>*/}
-            {/*                <p className={"text-xl  sw-font mt-4"}>*/}
-            {/*                    Уроки с рекомендательной системой <br/>*/}
-            {/*                    Нелинейные курсы <br/>*/}
-            {/*                    Тесты и экзамены с защитой от Chat GPT*/}
-            {/*                </p>*/}
-            {/*            </div>*/}
-
-            {/*            <div className={"border-2 border-neutral-600 p-8 rounded-2xl w-full flex-col"}>*/}
-            {/*                <p className={"text-4xl sw-font  border-neutral-600 rounded-2xl bg-gradient-to-r from-sw to-cyan-500 inline-block text-transparent bg-clip-text"}>*/}
-            {/*                    О проекте*/}
-            {/*                </p>*/}
-            {/*                <p className={"text-xl  sw-font mt-4"}>*/}
-            {/*                    Проект от части научный с экспериментальными подходами <br/>*/}
-            {/*                    Участвовал в планировании с заказчиками, единственным программистом<br/>*/}
-            {/*                    {"Писал весь проект с нуля > 1.7 года"}*/}
-
-            {/*                </p>*/}
-            {/*            </div>*/}
-
-            {/*            <div className={"border-2 border-neutral-600 p-8 rounded-2xl w-full flex-col"}>*/}
-            {/*                <p className={"text-4xl  sw-font  border-neutral-600 rounded-2xl bg-gradient-to-r from-sw to-cyan-500 inline-block text-transparent bg-clip-text"}>*/}
-            {/*                    Технологии*/}
-            {/*                </p>*/}
-            {/*                <p className={"text-xl  sw-font mt-4"}>*/}
-            {/*                    React js, TypeScript, Redux Toolkit, MUI <br/>*/}
-            {/*                    (Express js, Prisma, Postgres, Google Cloud) <br/>*/}
-
-            {/*                    30+ к строк кода*/}
-
-            {/*                </p>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </section>*/}
-            {/*</div>*/}
-
-            {/*<div className="mt-32 mb-16">*/}
-            {/*    <section className="p-6 max-w-max md:max-w-md border border-gray-300 shadow-lg bg-white">*/}
-            {/*        <h2 className="text-4xl font-semibold mb-2 text-hh2">Теперь и вы можете меня*/}
-            {/*            нанять*/}
-            {/*        </h2>*/}
-            {/*        <p className="mb-4 text-black">*/}
-            {/*            Если вы ищете опытного разработчика, готового взяться за ваш следующий*/}
-            {/*            проект, я открыт для предложений.*/}
-            {/*        </p>*/}
-            {/*        <a href={RESUME_URL}*/}
-            {/*           className="font-bold py-2 px-4 rounded hover:bg-green-400 inline-block text-center bg-hh">*/}
-            {/*            Перейти в HH*/}
-            {/*        </a>*/}
-            {/*    </section>*/}
-            {/*</div>*/}
-            {/*</div>*/}
 
         </main>
     );
